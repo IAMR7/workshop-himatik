@@ -1,0 +1,171 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* NAVBAR */
+a.nav-link {
+    font-weight: 800;
+    color: rgb(25, 25, 146) !important;
+}
+
+a.nav-link:hover {
+    color: orange !important;
+}
+
+a.nav-link.active {
+    color: orange !important;
+}
+
+a.btn-login {
+    width: 100%;   
+}
+
+/* HERO */
+section.section-hero div.text-hero h2 {
+    font-weight: 800;
+}
+
+section.section-hero {
+    background-image: url('img/bg-hero.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+section.section-hero::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    opacity: 80%;
+    background-color: white;
+}
+
+section.section-hero div.container {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+
+div.text-hero {
+    margin-top: 30px;
+}
+div.gambar-hero {
+    margin-top: 20px;
+}
+
+a.btn-hero {
+    width: 170px;
+    border: 2px solid rgb(25, 25, 146);
+    color: rgb(25, 25, 146);
+    background-color: transparent;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+a.btn-hero:hover {
+    background-color: rgb(25, 25, 146);
+    color: white;
+}
+
+/* MATA PELAJARAN */
+div.heading-konten h4 {
+    font-weight: bold;
+}
+
+div.heading-konten h4::after {
+    content: '';
+    display: block;
+    bottom: 0;
+    border-bottom: 2px solid rgb(25, 25, 146);
+    width: 10%;
+    margin: 10px auto;
+
+}
+
+a.btn-konten {
+    background-color: rgb(25, 25, 146);
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 180px;
+}
+
+a.btn-konten:hover {
+    background-color: orange;
+}
+
+h5.card-title {
+    font-weight: bold;
+}
+
+/* HALAMAN LOGIN */
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+  .form-signin .checkbox {
+    font-weight: 400;
+  }
+  .form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-signin .form-control:focus {
+    z-index: 2;
+  }
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+/* RESPONSIVE (DESKTOP) */
+@media (min-width: 992px) {
+
+    a.nav-link {
+        margin-left: 30px;
+    }
+
+    a.nav-link:hover {
+        border-bottom: 2px solid  orange;
+    }
+
+    a.nav-link.active {
+        border-bottom: 2px solid  orange;
+    }
+
+    a.btn-login {
+        margin-left: 30px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 120px;
+    }
+
+    section.section-hero div.container {
+        text-align: justify;
+    }
+
+    div.text-hero {
+        margin-top: 90px;
+    }
+    div.gambar-hero {
+        margin-top: 20px;
+    }
+}
